@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+      @apply text-[#1f2937] tracking-wide
+    }
+  
+    h1, h2, h3, h4, h5, h6 {
+      @apply font-bold
+    }
+  
+    h1 {
+      @apply text-4xl sm:text-5xl md:text-6xl font-[Raleway]
+    }
+  
+    h2 {
+      @apply text-3xl sm:text-4xl
+    }
+    
+    li {
+      @apply cursor-pointer
+    }
+  
+    strong {
+      @apply font-bold text-cyan-600
+    }
+  }
+
+  .my-rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+  
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+  
+  .perspective {
+    perspective: 1000px;
+  }
+  
+  .group:hover .group-hover\:my-rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+  .backface-hidden {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
